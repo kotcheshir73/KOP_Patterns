@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F455D525-14CB-4007-B3DB-B990CA148A5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplicationPatterns</RootNamespace>
+    <AssemblyName>WindowsFormsApplicationPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DescribeClass.cs" />
+    <Compile Include="BehaviorPatterns\FormChainOfResponsibility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormChainOfResponsibility.Designer.cs">
+      <DependentUpon>FormChainOfResponsibility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormCommand.Designer.cs">
+      <DependentUpon>FormCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormInterpreter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormInterpreter.Designer.cs">
+      <DependentUpon>FormInterpreter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormIterator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormIterator.Designer.cs">
+      <DependentUpon>FormIterator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormMediator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormMediator.Designer.cs">
+      <DependentUpon>FormMediator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormMemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormMemento.Designer.cs">
+      <DependentUpon>FormMemento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormObserver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormObserver.Designer.cs">
+      <DependentUpon>FormObserver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormState.Designer.cs">
+      <DependentUpon>FormState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormStrategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormStrategy.Designer.cs">
+      <DependentUpon>FormStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormTemplateMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormTemplateMethod.Designer.cs">
+      <DependentUpon>FormTemplateMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BehaviorPatterns\FormVisitor.Designer.cs">
+      <DependentUpon>FormVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetTextInRichTextBox.cs" />
+    <Compile Include="SOLID\FormD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOLID\FormD.Designer.cs">
+      <DependentUpon>FormD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOLID\FormI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOLID\FormI.Designer.cs">
+      <DependentUpon>FormI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOLID\FormL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOLID\FormL.Designer.cs">
+      <DependentUpon>FormL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOLID\FormO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOLID\FormO.Designer.cs">
+      <DependentUpon>FormO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOLID\FormS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOLID\FormS.Designer.cs">
+      <DependentUpon>FormS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericPatterns\FormAbstractFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericPatterns\FormAbstractFactory.Designer.cs">
+      <DependentUpon>FormAbstractFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericPatterns\FormBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericPatterns\FormBuilder.Designer.cs">
+      <DependentUpon>FormBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericPatterns\FormFactoryMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericPatterns\FormFactoryMethod.Designer.cs">
+      <DependentUpon>FormFactoryMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericPatterns\FormPrototype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericPatterns\FormPrototype.Designer.cs">
+      <DependentUpon>FormPrototype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericPatterns\FormSingleton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericPatterns\FormSingleton.Designer.cs">
+      <DependentUpon>FormSingleton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructPatterns\FormBridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructPatterns\FormBridge.designer.cs">
+      <DependentUpon>FormBridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructPatterns\FormAdapter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructPatterns\FormAdapter.designer.cs">
+      <DependentUpon>FormAdapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructPatterns\FormComposite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructPatterns\FormComposite.designer.cs">
+      <DependentUpon>FormComposite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructPatterns\FormDecorator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructPatterns\FormDecorator.designer.cs">
+      <DependentUpon>FormDecorator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructPatterns\FormFacade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructPatterns\FormFacade.designer.cs">
+      <DependentUpon>FormFacade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructPatterns\FormFlyweight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructPatterns\FormFlyweight.Designer.cs">
+      <DependentUpon>FormFlyweight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructPatterns\FormProxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructPatterns\FormProxy.designer.cs">
+      <DependentUpon>FormProxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BehaviorPatterns\FormChainOfResponsibility.resx">
+      <DependentUpon>FormChainOfResponsibility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormCommand.resx">
+      <DependentUpon>FormCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormInterpreter.resx">
+      <DependentUpon>FormInterpreter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormIterator.resx">
+      <DependentUpon>FormIterator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormMediator.resx">
+      <DependentUpon>FormMediator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormMemento.resx">
+      <DependentUpon>FormMemento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormObserver.resx">
+      <DependentUpon>FormObserver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormState.resx">
+      <DependentUpon>FormState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormStrategy.resx">
+      <DependentUpon>FormStrategy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormTemplateMethod.resx">
+      <DependentUpon>FormTemplateMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BehaviorPatterns\FormVisitor.resx">
+      <DependentUpon>FormVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOLID\FormL.resx">
+      <DependentUpon>FormL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOLID\FormO.resx">
+      <DependentUpon>FormO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOLID\FormS.resx">
+      <DependentUpon>FormS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericPatterns\FormAbstractFactory.resx">
+      <DependentUpon>FormAbstractFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericPatterns\FormBuilder.resx">
+      <DependentUpon>FormBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericPatterns\FormFactoryMethod.resx">
+      <DependentUpon>FormFactoryMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericPatterns\FormPrototype.resx">
+      <DependentUpon>FormPrototype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericPatterns\FormSingleton.resx">
+      <DependentUpon>FormSingleton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructPatterns\FormBridge.resx">
+      <DependentUpon>FormBridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructPatterns\FormAdapter.resx">
+      <DependentUpon>FormAdapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructPatterns\FormComposite.resx">
+      <DependentUpon>FormComposite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructPatterns\FormDecorator.resx">
+      <DependentUpon>FormDecorator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructPatterns\FormFacade.resx">
+      <DependentUpon>FormFacade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructPatterns\FormFlyweight.resx">
+      <DependentUpon>FormFlyweight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructPatterns\FormProxy.resx">
+      <DependentUpon>FormProxy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryAbstractFactory\ClassLibraryAbstractFactory.csproj">
+      <Project>{20d02036-4be1-4978-b8c6-f637c752534f}</Project>
+      <Name>ClassLibraryAbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryAdapter\ClassLibraryAdapter.csproj">
+      <Project>{24fd0bc7-e7b8-4177-99fe-6bd6835e279c}</Project>
+      <Name>ClassLibraryAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryAttribute\ClassLibraryAttribute.csproj">
+      <Project>{1523ac33-25ca-4019-b53b-0c4d7bd95ef0}</Project>
+      <Name>ClassLibraryAttribute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryBridge\ClassLibraryBridge.csproj">
+      <Project>{1d67fb69-ae0a-4259-962a-1f47518c93bc}</Project>
+      <Name>ClassLibraryBridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryBuilder\ClassLibraryBuilder.csproj">
+      <Project>{d11a1956-6b55-46aa-9a57-d87998973396}</Project>
+      <Name>ClassLibraryBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryChainOfResponsibility\ClassLibraryChainOfResponsibility.csproj">
+      <Project>{2c486583-308f-4676-bf70-72d3eb878adc}</Project>
+      <Name>ClassLibraryChainOfResponsibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryCommand\ClassLibraryCommand.csproj">
+      <Project>{62148260-6156-4466-8276-8ec7d50b9152}</Project>
+      <Name>ClassLibraryCommand</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryComposite\ClassLibraryComposite.csproj">
+      <Project>{9f424f40-64b6-42c1-8e66-2a9d6336b136}</Project>
+      <Name>ClassLibraryComposite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryDecorator\ClassLibraryDecorator.csproj">
+      <Project>{9bc3bec3-4015-43e6-995d-bbad02991e01}</Project>
+      <Name>ClassLibraryDecorator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryD\ClassLibraryD.csproj">
+      <Project>{b646a68a-10df-4c02-98e3-6e6d304104d4}</Project>
+      <Name>ClassLibraryD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryFacade\ClassLibraryFacade.csproj">
+      <Project>{1ceaf207-5eae-4ada-88fe-a563cb7b24cf}</Project>
+      <Name>ClassLibraryFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryFactoryMethod\ClassLibraryFactoryMethod.csproj">
+      <Project>{1c89a34d-b57a-475f-aa12-2b38c43a6132}</Project>
+      <Name>ClassLibraryFactoryMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryFlyweight\ClassLibraryFlyweight.csproj">
+      <Project>{1c1eaf7a-22b9-475d-8dcf-a0af52e7d43d}</Project>
+      <Name>ClassLibraryFlyweight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryInterpreter\ClassLibraryInterpreter.csproj">
+      <Project>{849e93d3-0d7b-4245-9fe5-cf776db924f7}</Project>
+      <Name>ClassLibraryInterpreter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryIterator\ClassLibraryIterator.csproj">
+      <Project>{7fbfe60f-6d2a-4eda-b9cf-aa1f9cde1b57}</Project>
+      <Name>ClassLibraryIterator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryI\ClassLibraryI.csproj">
+      <Project>{188cbfd6-d1e5-4199-85cc-70a3585a32fe}</Project>
+      <Name>ClassLibraryI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryL\ClassLibraryL.csproj">
+      <Project>{4efa8889-7dee-4db0-aaa1-b6948b785b28}</Project>
+      <Name>ClassLibraryL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryMediator\ClassLibraryMediator.csproj">
+      <Project>{95fe2ff8-634a-4bab-b4b1-871ac3f7a206}</Project>
+      <Name>ClassLibraryMediator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryMemento\ClassLibraryMemento.csproj">
+      <Project>{203961a8-3f5c-4f75-8298-becd28d02d34}</Project>
+      <Name>ClassLibraryMemento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryObserver\ClassLibraryObserver.csproj">
+      <Project>{a09881dd-0442-41b6-b7f9-ac1e8bf4bfbe}</Project>
+      <Name>ClassLibraryObserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryO\ClassLibraryO.csproj">
+      <Project>{51bce3ce-0811-4e61-8785-5c8c421dd6c1}</Project>
+      <Name>ClassLibraryO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryPrototype\ClassLibraryPrototype.csproj">
+      <Project>{13d7c970-1c6b-41ca-9562-a5922cfa5563}</Project>
+      <Name>ClassLibraryPrototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryProxy\ClassLibraryProxy.csproj">
+      <Project>{3b71f41f-84e3-4d3a-bf97-557716520de5}</Project>
+      <Name>ClassLibraryProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrarySingleton\ClassLibrarySingleton.csproj">
+      <Project>{c222a352-d402-45ac-b1bd-c15cdc8ac559}</Project>
+      <Name>ClassLibrarySingleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryState\ClassLibraryState.csproj">
+      <Project>{fdb67ed4-2776-4cbe-ad07-1717ad678907}</Project>
+      <Name>ClassLibraryState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryStrategy\ClassLibraryStrategy.csproj">
+      <Project>{9f958f70-73db-4942-b8f4-449228a0454f}</Project>
+      <Name>ClassLibraryStrategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryS\ClassLibraryS.csproj">
+      <Project>{b287aa53-c1b1-4b78-ac69-279d06a1afae}</Project>
+      <Name>ClassLibraryS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryTemplateMethod\ClassLibraryTemplateMethod.csproj">
+      <Project>{04402b14-32f3-48b5-a80d-89d427329ce8}</Project>
+      <Name>ClassLibraryTemplateMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryVisitor\ClassLibraryVisitor.csproj">
+      <Project>{69699b48-fc87-4a0a-b5ad-62b5632e9637}</Project>
+      <Name>ClassLibraryVisitor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
